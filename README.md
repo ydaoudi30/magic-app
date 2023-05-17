@@ -4,7 +4,7 @@ Pour lancer l'application: npm start
 
 ## Fonctionnalités: 
 
-Le chargement des cartes depuis l'API se fait au lancement et depuis cet écran l'utilisateur à la possibilité de faire des recherches selon divers champs à travers le formulaire.
+Le chargement des cartes depuis l'API se fait au lancement et depuis cet écran l'utilisateur a la possibilité de faire des recherches selon divers critères à travers un formulaire.
 <img width="952" alt="Capture d'écran 2023-05-17 181923" src="https://github.com/ydaoudi30/magic-app/assets/40476520/7d37c2b9-d413-480e-9d49-880c67463803">
 <img width="959" alt="Capture d'écran 2023-05-17 181944" src="https://github.com/ydaoudi30/magic-app/assets/40476520/ac70eaea-5b5d-4efe-9840-3f235b75cce2">
 
