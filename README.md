@@ -1,5 +1,6 @@
 Dépendances: npm install axios @mui/material @emotion/react @emotion/styled @material-ui/lab
-Nouvelles dépendances au 2e commit: npm install react-router-dom
+
+Nouvelles dépendances au dernier commit: npm install react-router-dom
 
 Pour lancer l'application: npm start
 
