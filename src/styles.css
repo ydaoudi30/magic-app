@@ -2,55 +2,225 @@ h1 {
   text-align: center;
 }
 
+.default-image {
+  background-image: url('./assets/magic.jpeg');
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
   
   .item-card {
-    width: 18%;
-    margin-bottom: 10px;
-    padding: 10px;
+    flex-basis: calc(20% - 10px);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .item-card .name {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 4px;
+  }
+  
+  .item-card .type {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 2px;
   }
 
   .item-card .rarity {
     display: inline-flex;
-    align-items: center;
     padding: 2px 6px;
-    border-radius: 4px;
     color: white;
+    font-size: 14px;
     font-weight: bold;
+  }
+
+  .item-card .description {
+    font-size: 10px;
   }
 
   .common {
     background-color: #353635;
+    display: inline;
+    border-radius: 10px;
   }
   
   .uncommon {
     background-color: #21f305;
+    display: inline;
+    border-radius: 10px;
   }
   
   .rare {
     background-color: #00aeff;
+    display: inline;
+    border-radius: 10px;
   }
   
   .mythic-rare {
     background-color: #0004ff;
+    display: inline;
+    border-radius: 10px;
   }
   
   .special {
     background-color: #fd6ee1;
+    display: inline;
+    border-radius: 10px;
   }
   
   .basic-land {
     background-color: #d69b07;
+    display: inline;
+    border-radius: 10px;
+  }
+
+  .joke {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    border-radius: 10px;
+    display: inline;
   }
 
   .search-form-container {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     margin-bottom: 20px;
     gap: 50px;
+  }
+
+  .form {
+    display: flex;
+    position: relative;
+    width: 220px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+  }
+  
+  .form input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px 10px 0 10px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .suggestions {
+    position: absolute;
+    top: calc(100% + 4px); /* Ajustement du positionnement vertical */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ajustement des marges */
+    z-index: 1; /* Assurez-vous que le dropdown est au-dessus des autres éléments */
+  }
+  
+  .suggestions li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .autocomplete li:hover {
+    background-color: #f1f1f1;
+  }
+
+  .searchbutton{
+    flex-shrink: 0;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .displayed-rarity {
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0px 5px;
+    display: inline-block;
+  }
+
+  .displayed-rarity.Common {
+    background-color: #353635;
+    display: inline;
+  }
+  
+  .displayed-rarity.Uncommon {
+    background-color: #21f305;
+    display: inline;
+  }
+  
+  .displayed-rarity.Rare {
+    background-color: #00aeff;
+    display: inline;
+  }
+  
+  .displayed-rarity.Mythic-Rare {
+    background-color: #0004ff;
+    display: inline;
+  }
+  
+  .displayed-rarity.Special {
+    background-color: #fd6ee1;
+    display: inline;
+  }
+  
+  .displayed-rarity.Basic-Land {
+    background-color: #d69b07;
+    display: inline;
+  }
+
+  .search-terms-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .search-term {
+    background-color: black;
+    color: grey;
+    border-radius: 1000px;
+    padding: 0px 5px;
+    margin-right: 5px;
+  }
+
+  .next-page {
+    gap: 10px;
+    display: flex;
+    margin-right: 550px;
+  }
+  .previous-page {
+    gap: 10px;
+    display: flex;
+    margin-left: 550px;
+  }
+
+  .pagination-container {
+    display: flex;
+    position: absolute;
+    margin-left: 620px;
+    justify-content: center;
+    flex-shrink: 0;
   }
